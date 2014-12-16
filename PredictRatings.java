@@ -164,7 +164,7 @@ public class PredictRatings
     System.out.print("\r[");
     int i = 0;
     for (; i <= (int)(progressPercentage * width); i++) {
-      System.out.print(".");
+      System.out.print("#");
     }
     for (; i < width; i++) {
       System.out.print(" ");

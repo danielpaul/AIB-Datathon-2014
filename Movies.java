@@ -183,12 +183,10 @@ public class Movies
   public static boolean hasSameGenre(int movie1, int movie2)
   {
     String[] movie1Genres = getGenres(movie1), movie2Genres = getGenres(movie2);
-
     for(int i = 0; i < movie1Genres.length; i++)
     {
-      if(movie1Genres[i] == movie2Genres[i]) return true;
+      if(movie1Genres[i] != null && movie2Genres[i] != null && movie1Genres[i].equals("1") && movie2Genres[i].equals("1")) return true;
     }
-
     return false;
   }
 
